@@ -30,6 +30,7 @@ const PostDetail = async ({ params }: { params: { slug: string } }) => {
         <p className='mt-4 text-sm text-gray-700'>Lượt xem: {post.views}</p>
       </div>
     );
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     // Xử lý lỗi nếu không tìm thấy bài viết
     return (
