@@ -1,0 +1,19 @@
+/* Mặc định */
+.responsive-btn {
+    @apply text-sm; /* Chiều rộng cố định mặc định */
+  }
+  
+  /* Responsive cho iPad */
+  @media (min-width: 768px) {
+    .responsive-btn {
+      @apply text-base; /* Chiều rộng lớn hơn trên iPad */
+    }
+  }
+  
+  /* Responsive cho điện thoại */
+  @media (max-width: 430px) {
+    .responsive-btn {
+      @apply text-sm bg-emerald-400 flex justify-center items-center min-w-28 overflow-hidden;
+    }
+  }
+  

@@ -1,0 +1,11 @@
+@media (max-width: 430px) {
+    .Tintuc{
+        @apply text-3xl;
+    }
+    .Capnhat{
+        @apply text-lg ml-3;
+    }
+    .Product{
+        @apply col-span-12;
+    }
+}

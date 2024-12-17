@@ -1,0 +1,19 @@
+
+/* Phản hồi cho các màn hình tablet và trên 430px */
+@media (max-width: 430px) {
+    .slidercontainer{
+        @apply min-h-56;
+    }
+    .nav-button {
+      @apply p-3; /* Nút điều hướng trở lại kích thước mặc định */
+    }
+  
+    .indicator-button {
+      @apply w-4 h-4; /* Giữ kích thước indicator */
+    }
+    .slider-controls,
+    .slider-indicators {
+      display: none;
+    }
+  }
+  

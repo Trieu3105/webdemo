@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fade-effect {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.fade-effect.visible {
+  opacity: 1;
+}
+/* .Menudoc {
+  @apply w-full md:w-3/4 lg:w-1/2 mx-auto;
+}
+*/
+.menuchucnang ul li {
+  @apply text-gray-600 dark:text-gray-300 hover:text-blue-500 ;
+}
+
+.menuchucnang ul {
+  @apply rounded-md shadow-md;
+}
+

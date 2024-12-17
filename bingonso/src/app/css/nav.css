@@ -1,0 +1,48 @@
+/* CSS dành cho button và menuchucnang */
+@media (max-width: 430px) {
+    .menuchucnang {
+      position: relative; /* Đặt vị trí để các phần tử con giữ nguyên trong container */
+      width: 100%; /* Chiếm toàn bộ chiều rộng container */
+      transform-origin: top center; /* Điểm gốc cho transform */
+      margin: 0 auto; /* Canh giữa phần tử */
+    }
+    .Menudoc{
+        height: 100vh;
+    }
+    /* Căn chỉnh lại button và icon khi transform */
+    .button-icon {
+      position: relative; /* Đặt lại vị trí theo phần tử cha */
+      display: flex; /* Đảm bảo các phần tử con nằm ngang */
+      align-items: center; /* Căn giữa theo chiều dọc */
+      justify-content: space-between; /* Căn giữa và đẩy nội dung */
+      width: 100%; /* Rộng toàn bộ container cha */
+    }
+  
+    .button-icon span {
+      display: inline-block; /* Đảm bảo inline để icon không bị ảnh hưởng */
+      transition: transform 0.3s ease-in-out; /* Animation mượt mà */
+    }
+  
+    .button-icon .rotate-icon {
+      transition: transform 0.3s ease-in-out; /* Hiệu ứng xoay */
+    }
+  
+    .button-icon .rotate-icon.open {
+      transform: rotate(90deg); /* Xoay 90 độ khi mở */
+    }
+  
+    .button-icon .rotate-icon.closed {
+      transform: rotate(0deg); /* Giữ nguyên khi đóng */
+    }
+    .chucnang {
+        text-align: left; /* Căn chữ về bên trái */
+        justify-self: start; /* Căn phần tử bên trái trong lưới */
+        margin-left: 0; /* Xóa khoảng cách thừa */
+        margin-left: 10px;
+      }
+      .no-scroll {
+        overflow: hidden; /* Vô hiệu hóa cuộn dọc */
+        height: 100%; /* Đảm bảo chiều cao của body chiếm toàn bộ viewport */
+      }
+  }
+  

@@ -1,0 +1,56 @@
+
+/* Phản hồi cho giao diện điện thoại di động */
+@media (max-width: 430px) {
+    .Menudoc {
+      @apply mx-4 col-start-1;
+    }
+  
+    .Header {
+      @apply col-start-1 col-span-12 mt-4;
+    }
+  
+    .Logo {
+      @apply col-start-1 col-span-6 flex flex-col items-center;
+    }
+  
+    .Logo svg {
+      @apply mx-1 ml-4;
+      width: 8px;
+      height: 8px;
+    }
+  
+    .Logo span {
+      @apply text-xl ;
+    }
+  
+    .SchoolName {
+      @apply text-sm sm:text-sm text-center mt-1;
+    }
+  
+    .TaiGameButton {
+      @apply col-start-8 col-span-12 my-auto;
+    }
+  
+    .TaiGameButton button {
+      @apply w-4/5 bg-emerald-400 text-gray-800 font-bold border-solid rounded-xl flex items-center justify-center text-sm py-2;
+    }
+  
+    .Slider {
+      @apply h-[210px];
+    }
+  
+    .HomeContent {
+      @apply col-start-1 col-span-12;
+    }
+  }
+  
+  /* Phản hồi cho các màn hình tablet và trên 430px */
+  /* @media (max-width: 768px) {
+    .Logo {
+      @apply col-start-1 col-span-6 flex flex-col items-center;
+    }
+  
+    .TaiGameButton button {
+      @apply w-2/3 bg-emerald-400 text-gray-800 font-bold border-solid rounded-xl flex items-center justify-center text-sm md:text-base lg:text-lg py-2;
+    }
+  } */

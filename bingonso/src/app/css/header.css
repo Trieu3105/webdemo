@@ -1,0 +1,38 @@
+
+  /* Media Query dành riêng cho iPhone 14 Pro Max và Samsung Galaxy Note 22 */
+  @media (max-width: 430px) {
+    header .logo-container img {
+      max-width: 80px;
+      max-height: 40px;
+    }
+  
+    header .action-buttons button {
+      width: 36px;
+      height: 36px;
+    }
+  
+    header .action-buttons svg {
+      width: 18px;
+      height: 18px;
+    }
+    .menu-slide {
+      transform: translateX(-100%); /* Ban đầu ẩn menu ra ngoài màn hình */
+      transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng trượt */
+    }
+  
+    .menu-slide.show {
+      transform: translateX(0); /* Khi menu được hiển thị, dịch chuyển vào */
+    }
+  }
+  @media (max-width: 768px) {
+    .menu-slide {
+      display: block; /* Menu sẽ hiển thị trên thiết bị di động */
+    }
+  }
+  
+  /* Ẩn menu trên màn hình máy tính bàn và laptop */
+  @media (min-width: 769px) {
+    .menu-slide {
+      display: none; /* Menu sẽ bị ẩn trên máy tính bàn và laptop */
+    }
+  }
