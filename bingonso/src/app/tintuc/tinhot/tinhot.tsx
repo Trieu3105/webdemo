@@ -3,8 +3,8 @@
 import React from 'react';
 
 // Hàm lấy dữ liệu bài viết từ API
-const fetchPost = async (slug: string) => {
-  const res = await fetch(`http://localhost:8080/api/tintuc/${slug}`, {
+const fetchPost = async (id: string) => {
+  const res = await fetch(`http://localhost:8080/api/tintuc/tinhot/${id}`, {
     cache: 'no-store', // Tắt cache để lấy dữ liệu mới nhất
   });
 
@@ -15,7 +15,7 @@ const fetchPost = async (slug: string) => {
 };
 
 // Component chi tiết bài viết
-const PostDetail = async ({ params }: { params: { slug: string } }) => {
+const Tinhot = async ({ params }: { params: { slug: string } }) => {
   const { slug } = params; // Lấy slug từ params
 
   try {
@@ -42,4 +42,4 @@ const PostDetail = async ({ params }: { params: { slug: string } }) => {
   }
 };
 
-export default PostDetail;
+export default Tinhot;

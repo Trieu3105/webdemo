@@ -68,7 +68,7 @@ const Tintuc = () => {
       {/* Hiển thị các tin tức */}
       {news.map((item, index) => (
         <div key={index} className="xl:col-span-4 md:col-span-4 col-span-3">
-          <Link href={`/tintuc/${item.id}`}>
+          <Link href={`/tintuc/tinhot/${item.id}`}>
             <div className="relative transition-all overflow-hidden rounded-xl ring-gray-200 dark:ring-gray-800 dark:ring-1 ring-0 hover:ring-2 dark:hover:ring-2 hover:ring-primary-500 dark:hover:ring-primary-400 shadow-md hover:shadow-lg bg-white dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800">
               <div className="p-0 sm:p-0">
                 <div

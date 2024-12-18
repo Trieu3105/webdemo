@@ -32,7 +32,7 @@ router.get("/tintuc", async (req, res) => {
 });
 
 // API Route để lấy chi tiết bài viết
-router.get("/tintuc/:id", async (req, res) => {
+router.get("/tintuc/tinhot/:id", async (req, res) => {
     const { id } = req.params; // Lấy id từ URL
     console.log("nhận id từ URL :" ,id);
   
